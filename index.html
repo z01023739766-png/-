@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>📚 Study Tracker</h1>
+
+<div class="card">
+<h2>로그인</h2>
+<input id="id" placeholder="아이디">
+<input id="pw" type="password" placeholder="비밀번호">
+<button onclick="login()">로그인</button>
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>공부 타이머</h2>
+<div id="timer">00:00:00</div>
+<button onclick="start()">시작</button>
+<button onclick="stop()">정지</button>
+<button onclick="resetT()">초기화</button>
+<button onclick="saveRec()">기록 저장</button>
+</div>
+
+<div class="card">
+<h2>공부 기록</h2>
+<p>총 공부 시간: <span id="total">0</span>분</p>
+<ul id="list"></ul>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
